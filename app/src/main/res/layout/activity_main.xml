@@ -1,28 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />
-
-   <EditText
-       android:layout_width="match_parent"
-       android:layout_height="wrap_content"
-       android:hint="Masukkan namamu"
-       android:textSize="30sp"
-       android:id="@+id/nama_edit_text"/>
-    <Button
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="SUBMIT"
-        android:layout_below="@id/nama_edit_text"
-        android:textSize="30sp"
+        android:text="SELAMAT DATANG DI UKM CLAN486"
+        android:textSize="20sp"
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp" />
+
+    <ImageView
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIM"
+            android:inputType="number" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Password" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LOGIN"
         android:onClick="submit_btn"/>
-</RelativeLayout>
+
+</LinearLayout>

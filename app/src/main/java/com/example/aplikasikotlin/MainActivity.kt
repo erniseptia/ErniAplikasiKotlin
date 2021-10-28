@@ -15,10 +15,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun submit_btn(view: View) {
-        val namaEditText = findViewById<EditText>(R.id.nama_edit_text)
-        val nama = namaEditText.text.toString()
 
-        val toast = Toast.makeText(applicationContext, nama, Toast.LENGTH_SHORT)
+        val toast = Toast.makeText(applicationContext, "Anda Berhasil Login", Toast.LENGTH_SHORT)
         toast.show()
     }
 
